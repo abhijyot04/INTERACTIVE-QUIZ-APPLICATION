@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1abc9c, #16a085); /* Teal-Green gradient */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Landing Page */
+  #landing-page {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #landing-page h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  
+  #landing-page .highlight {
+    color: #f1c40f;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #landing-page .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #16a085;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  #landing-page .btn:hover {
+    background: #1abc9c;
+    transform: scale(1.05);
+  }
+  
+  /* Quiz Container */
+  #quiz-container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .quiz-header {
+    margin-bottom: 20px;
+  }
+  
+  #question-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  #question {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  
+  /* Options List */
+  .options-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .options-list li {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .options-list li:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .options-list li.correct {
+    background: #27ae60;
+    color: white;
+  }
+  
+  .options-list li.incorrect {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  /* Next Button */
+  #next-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #3498db;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  #next-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  #next-btn:hover:enabled {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Score */
+  #score {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Scorecard */
+.scorecard {
+    background: linear-gradient(135deg, #ff6f61, #f39c12); /* Vibrant orange-pink gradient */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .scorecard h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .scorecard .score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .scorecard .btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .scorecard .btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Retry Button */
+  #retry-btn {
+    margin-top: 20px;
+  }
+  /* Feedback Text */
+#feedback {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Correct Answer */
+.correct {
+  color: green;
+}
+
+/* Incorrect Answer */
+.incorrect {
+  color: red;
+}
+
+  
